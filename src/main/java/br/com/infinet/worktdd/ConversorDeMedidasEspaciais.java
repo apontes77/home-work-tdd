@@ -10,6 +10,18 @@ public class ConversorDeMedidasEspaciais {
     }
 
     public double centimetrosParaPolegadas(double valorCentimetro) {
-        return valorCentimetro * 0.393701;
+        return valorCentimetro/2.54;
+    }
+
+    public double polegadasParaCentimetro(double valorPolegadas) {
+        return valorPolegadas * 2.54;
+    }
+
+    public double jardasParaCentimetros(double valorJardas) {
+        return valorJardas * 91.44;
+    }
+
+    public double centimetrosParaJardas(double valorCentimetros) {
+        return valorCentimetros/91.44;
     }
 }
