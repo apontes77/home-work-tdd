@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
+@DisplayName("testes do conversor de temperaturas")
 public class ConversaoDeTemperaturasTest {
     @Test
     @DisplayName("deve converter temperatura de Celsius para Fahrenheit")
@@ -22,7 +22,7 @@ public class ConversaoDeTemperaturasTest {
         ConversaoDeTemperaturas conversao = new ConversaoDeTemperaturas();
         double tempFahrenheit = 90;
         double fahrenheitToCelsius = conversao.fahrenheitToCelsius(tempFahrenheit);
-        assertEquals(32.22222222222222, fahrenheitToCelsius);
+        assertEquals(32.22, fahrenheitToCelsius);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class ConversaoDeTemperaturasTest {
         ConversaoDeTemperaturas conversao = new ConversaoDeTemperaturas();
         double tempKelvin = 0;
         double kelvinToFahrenheit = conversao.kelvinToFahrenheit(tempKelvin);
-        assertEquals(-459.66999999999996, kelvinToFahrenheit);
+        assertEquals(-459.67, kelvinToFahrenheit);
     }
 
     @Test
