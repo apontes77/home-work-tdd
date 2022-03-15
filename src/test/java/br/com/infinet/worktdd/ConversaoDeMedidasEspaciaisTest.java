@@ -14,7 +14,7 @@ public class ConversaoDeMedidasEspaciaisTest {
         ConversorDeMedidasEspaciais conversorDeMedidasEspaciais = new ConversorDeMedidasEspaciais();
         double valorMetros = 2;
         double metrosParaJardas = conversorDeMedidasEspaciais.metrosParaJardas(valorMetros);
-        assertEquals(2.18722, metrosParaJardas);
+        assertEquals(2.19, metrosParaJardas);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class ConversaoDeMedidasEspaciaisTest {
         ConversorDeMedidasEspaciais conversorDeMedidasEspaciais = new ConversorDeMedidasEspaciais();
         double valorJardas = 2;
         double jardasParaMetros = conversorDeMedidasEspaciais.jardasParaMetros(valorJardas);
-        assertEquals(1.8288, jardasParaMetros);
+        assertEquals(1.83, jardasParaMetros);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class ConversaoDeMedidasEspaciaisTest {
         ConversorDeMedidasEspaciais conversorDeMedidasEspaciais = new ConversorDeMedidasEspaciais();
         double valorCentimetros = 1;
         double centimetrosParaJardas = conversorDeMedidasEspaciais.centimetrosParaJardas(valorCentimetros);
-        assertEquals(0.010936132983377079, centimetrosParaJardas);
+        assertEquals(0.01, centimetrosParaJardas);
     }
 
     @Test
@@ -50,7 +50,7 @@ public class ConversaoDeMedidasEspaciaisTest {
         ConversorDeMedidasEspaciais conversorDeMedidasEspaciais = new ConversorDeMedidasEspaciais();
         double valorCentimetro = 1;
         double centimetrosParaPolegadas = conversorDeMedidasEspaciais.centimetrosParaPolegadas(valorCentimetro);
-        assertEquals(0.39370078740157477, centimetrosParaPolegadas);
+        assertEquals(0.39, centimetrosParaPolegadas);
     }
 
     @Test
